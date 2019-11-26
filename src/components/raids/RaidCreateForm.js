@@ -47,7 +47,7 @@ class RaidCreateForm extends Component{
 
     const pirateOptions=this.state.pirates.maps((pirate, index) => {
       return <option key={index}
-      value={pirate._links.self.href}>{pirate.firstName}</option>
+      value={pirate._links.self.href}>{pirate.firstName} {pirate.lastName}</option>
     })
 
     return(
